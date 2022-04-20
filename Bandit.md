@@ -49,21 +49,23 @@ $ find . -type f -size 1033c -exec cat {} +
 
 Password:DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
-# Level 6->7
+## Level 6->7
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 
 $ find / -type f -size 33c -group bandit6 -user bandit7
 
+$ cat /var/lib/dpkg/info/bandit7.password
+
 Password:HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
-# Level 7->8
+## Level 7->8
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 
 $ cat data.txt | grep millionth
 
 Password:cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
-# Level 8->9
+## Level 8->9
 ssh bandit8@bandit.labs.overthewire.org -p 2220
 
 First sort the passwords then count the number of occurrences, and last grep the password with only one occurrence.
